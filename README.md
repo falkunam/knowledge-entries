@@ -86,3 +86,5 @@ npm run test:e2e:ui
 ## Mobile Improvement:
 
 - **Added a floating “+” button for easy Add Entry access on small screens.**
+
+Demo Video: https://drive.google.com/file/d/11_9phpTDLbAAxjNptQ5vidc3izAHN8SB/view?usp=drive_link
