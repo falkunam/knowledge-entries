@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Knowledge Entries Dashboard
 
-## Getting Started
+A responsive CRUD dashboard built with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, **React Query**, **Formik + Yup**, and **JSON Server**.
 
-First, run the development server:
+This project demonstrates modern React development practices — including clean architecture, form validation, responsive design, and automated end-to-end tests using **Playwright**.
+
+---
+
+## 🚀 Features
+
+✅ Create, Read, Update, Delete (CRUD) operations  
+✅ React Query for data fetching and caching  
+✅ JSON Server as mock REST API  
+✅ Formik + Yup validation  
+✅ Image upload & preview  
+✅ Responsive layout (mobile-first)  
+✅ Modal form for Add/Edit  
+✅ Toast notifications for actions  
+✅ Playwright automated tests  
+✅ Bonus UI/UX improvements (search + mobile FAB + modal animation)
+
+---
+
+## 🧩 Tech Stack
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Query (TanStack)**
+- **Formik + Yup**
+- **Axios**
+- **React Hot Toast**
+- **JSON Server**
+- **Playwright**
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/falkunam/knowledge-entries.git
+cd knowledge-entries
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3️⃣ Start the mock API (JSON Server)
 
-## Learn More
+```bash
+npm run json-server
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4️⃣ Start the development server
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 5️⃣ Run automated tests (Playwright)
+```bash
+npm run test:e2e
+```
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run with Playwright UI 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run test:e2e:ui
+```
+
+
+## 🎨 UI/UX Improvement (Bonus)
+
+## Feature: Search bar & delete confirmation
+
+- **Added a search/filter input above the entries list.**
+- **Allows technicians to quickly locate a record.**
+- **Confirmation prompt prevents accidental deletes.**
+
+## Mobile Improvement:
+
+- **Added a floating “+” button for easy Add Entry access on small screens.**
